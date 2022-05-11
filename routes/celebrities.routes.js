@@ -21,6 +21,8 @@ const router = require("express").Router();
     }
   });
 
+  
+
   router.get("/celebrities", async (req, res, next) => {
     try {
       const celebrities = await Celebrity.find();
@@ -29,5 +31,6 @@ const router = require("express").Router();
       next(error);
     }
   });
+
   
   module.exports = router;
