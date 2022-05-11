@@ -15,7 +15,7 @@ const router = require("express").Router();
         occupation,
         catchPhrase,
       });
-      res.redirect("celebrities/create");
+      res.redirect("celebrities");
     } catch (error) {
       next(error);
     }
